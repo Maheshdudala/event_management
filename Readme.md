@@ -49,8 +49,6 @@ Create a `.env` file in the root directory:
 #### ✅ .env file for PostgreSQL
 
 ```
-DEBUG=True
-SECRET_KEY=your-secret-key
 DB_NAME=event_db
 DB_USER=postgres
 DB_PASSWORD=your_password
