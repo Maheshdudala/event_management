@@ -1,0 +1,3545 @@
+{
+	"info": {
+		"_postman_id": "f75c53f7-1d63-48af-8b91-0b8d62baa5f4",
+		"name": "Event_Management_collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45860068",
+		"_collection_link": "https://mahe-6201893.postman.co/workspace/Mahe's-Workspace~b567c68a-94b7-4020-8211-eb1591d3b381/collection/45860068-f75c53f7-1d63-48af-8b91-0b8d62baa5f4?action=share&source=collection_link&creator=45860068"
+	},
+	"item": [
+		{
+			"name": "Event Creation",
+			"item": [
+				{
+					"name": "Event creation",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\": \"Tech Conference 2025\",\r\n      \"location\": \"Chennai Convention Center\",\r\n      \"start_time\": \"2025-07-15T09:00:00+05:30\",\r\n      \"end_time\": \"2025-07-15T18:00:00+05:30\",\r\n      \"max_capacity\": 100\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://127.0.0.1:8000/events/",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"name\": \"Tech Conference 2025\",\r\n      \"location\": \"Chennai Convention Center\",\r\n      \"start_time\": \"2025-07-15T09:00:00+05:30\",\r\n      \"end_time\": \"2025-07-15T18:00:00+05:30\",\r\n      \"max_capacity\": 100\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:21:58 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "247"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Event created successfully\",\n    \"event\": {\n        \"id\": 2,\n        \"name\": \"Tech Conference 2025\",\n        \"location\": \"Chennai Convention Center\",\n        \"start_time\": \"2025-07-15T09:00:00+05:30\",\n        \"end_time\": \"2025-07-15T18:00:00+05:30\",\n        \"max_capacity\": 100,\n        \"available_slots\": 100\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Summer Music Festival event ",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\": \"Summer Music Festival\",\r\n      \"location\": \"Marina Beach Amphitheater\",\r\n      \"start_time\": \"2025-08-20T17:00:00+05:30\",\r\n      \"end_time\": \"2025-08-20T23:00:00+05:30\",\r\n      \"max_capacity\": 3\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Summer Music Festival event",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"name\": \"Summer Music Festival\",\r\n      \"location\": \"Marina Beach Amphitheater\",\r\n      \"start_time\": \"2025-08-20T17:00:00+05:30\",\r\n      \"end_time\": \"2025-08-20T23:00:00+05:30\",\r\n      \"max_capacity\": 150\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:25:14 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "248"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Event created successfully\",\n    \"event\": {\n        \"id\": 6,\n        \"name\": \"Summer Music Festival\",\n        \"location\": \"Marina Beach Amphitheater\",\n        \"start_time\": \"2025-08-20T17:00:00+05:30\",\n        \"end_time\": \"2025-08-20T23:00:00+05:30\",\n        \"max_capacity\": 150,\n        \"available_slots\": 150\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Startup Pitch Night event",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\": \"Startup Pitch Night\",\r\n      \"location\": \"T-Hub, Hyderabad\",\r\n      \"start_time\": \"2025-09-10T18:30:00+05:30\",\r\n      \"end_time\": \"2025-09-10T21:30:00+05:30\",\r\n      \"max_capacity\": 200\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Startup Pitch Night event",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"name\": \"Startup Pitch Night\",\r\n      \"location\": \"T-Hub, Hyderabad\",\r\n      \"start_time\": \"2025-09-10T18:30:00+05:30\",\r\n      \"end_time\": \"2025-09-10T21:30:00+05:30\",\r\n      \"max_capacity\": 200\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:25:47 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "237"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Event created successfully\",\n    \"event\": {\n        \"id\": 7,\n        \"name\": \"Startup Pitch Night\",\n        \"location\": \"T-Hub, Hyderabad\",\n        \"start_time\": \"2025-09-10T18:30:00+05:30\",\n        \"end_time\": \"2025-09-10T21:30:00+05:30\",\n        \"max_capacity\": 200,\n        \"available_slots\": 200\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "AI & ML Workshop Event",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\": \"AI & ML Workshop\",\r\n      \"location\": \"IIT Madras\",\r\n      \"start_time\": \"2025-10-05T10:00:00+05:30\",\r\n      \"end_time\": \"2025-10-05T16:00:00+05:30\",\r\n      \"max_capacity\": 10\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "AI & ML Workshop Event",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"name\": \"AI & ML Workshop\",\r\n      \"location\": \"IIT Madras\",\r\n      \"start_time\": \"2025-10-05T10:00:00+05:30\",\r\n      \"end_time\": \"2025-10-05T16:00:00+05:30\",\r\n      \"max_capacity\": 10\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:26:26 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "226"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Event created successfully\",\n    \"event\": {\n        \"id\": 8,\n        \"name\": \"AI & ML Workshop\",\n        \"location\": \"IIT Madras\",\n        \"start_time\": \"2025-10-05T10:00:00+05:30\",\n        \"end_time\": \"2025-10-05T16:00:00+05:30\",\n        \"max_capacity\": 10,\n        \"available_slots\": 10\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Food & Culture Festival",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\": \"Food & Culture Festival\",\r\n      \"location\": \"Phoenix Mall, Bangalore\",\r\n      \"start_time\": \"2025-11-12T11:00:00+05:30\",\r\n      \"end_time\": \"2025-11-12T22:00:00+05:30\",\r\n      \"max_capacity\": 5\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Food & Culture Festival",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"name\": \"Food & Culture Festival\",\r\n      \"location\": \"Phoenix Mall, Bangalore\",\r\n      \"start_time\": \"2025-11-12T11:00:00+05:30\",\r\n      \"end_time\": \"2025-11-12T22:00:00+05:30\",\r\n      \"max_capacity\": 5\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:27:02 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "244"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Event created successfully\",\n    \"event\": {\n        \"id\": 9,\n        \"name\": \"Food & Culture Festival\",\n        \"location\": \"Phoenix Mall, Bangalore\",\n        \"start_time\": \"2025-11-12T11:00:00+05:30\",\n        \"end_time\": \"2025-11-12T22:00:00+05:30\",\n        \"max_capacity\": 5,\n        \"available_slots\": 5\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "lists-events",
+			"item": [
+				{
+					"name": "List Events",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\": \"Startup Pitch Night\",\r\n      \"location\": \"T-Hub, Hyderabad\",\r\n      \"start_time\": \"2025-09-10T18:30:00+05:30\",\r\n      \"end_time\": \"2025-09-10T21:30:00+05:30\",\r\n      \"max_capacity\": 200\r\n    }"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List Events",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"name\": \"Startup Pitch Night\",\r\n      \"location\": \"T-Hub, Hyderabad\",\r\n      \"start_time\": \"2025-09-10T18:30:00+05:30\",\r\n      \"end_time\": \"2025-09-10T21:30:00+05:30\",\r\n      \"max_capacity\": 200\r\n    }"
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:27:29 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "963"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"name\": \"Tech Conference 2025\",\n        \"location\": \"Chennai Convention Center\",\n        \"start_time\": \"2025-07-15T09:00:00+05:30\",\n        \"end_time\": \"2025-07-15T18:00:00+05:30\",\n        \"max_capacity\": 100,\n        \"available_slots\": 100\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Summer Music Festival\",\n        \"location\": \"Marina Beach Amphitheater\",\n        \"start_time\": \"2025-08-20T17:00:00+05:30\",\n        \"end_time\": \"2025-08-20T23:00:00+05:30\",\n        \"max_capacity\": 150,\n        \"available_slots\": 150\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Startup Pitch Night\",\n        \"location\": \"T-Hub, Hyderabad\",\n        \"start_time\": \"2025-09-10T18:30:00+05:30\",\n        \"end_time\": \"2025-09-10T21:30:00+05:30\",\n        \"max_capacity\": 200,\n        \"available_slots\": 200\n    },\n    {\n        \"id\": 8,\n        \"name\": \"AI & ML Workshop\",\n        \"location\": \"IIT Madras\",\n        \"start_time\": \"2025-10-05T10:00:00+05:30\",\n        \"end_time\": \"2025-10-05T16:00:00+05:30\",\n        \"max_capacity\": 10,\n        \"available_slots\": 10\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Food & Culture Festival\",\n        \"location\": \"Phoenix Mall, Bangalore\",\n        \"start_time\": \"2025-11-12T11:00:00+05:30\",\n        \"end_time\": \"2025-11-12T22:00:00+05:30\",\n        \"max_capacity\": 5,\n        \"available_slots\": 5\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "attendee registration",
+			"item": [
+				{
+					"name": "Rajesh Kumar",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n        \"name\": \"Rajesh Kumar\",\r\n        \"email\": \"rajesh.kumar@gmail.com\"\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/7/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"7",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Rajesh Kumar",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\r\n        \"name\": \"Rajesh Kumar\",\r\n        \"email\": \"rajesh.kumar@gmail.com\"\r\n      }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/5/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"5",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:28:29 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "59"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"detail\": \"Attendee Rajesh Kumar Registrated Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Priya Sharma",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Priya Sharma\",\r\n        \"email\": \"priya.sharma@yahoo.com\"\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/7/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"7",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Priya Sharma",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"Priya Sharma\",\r\n        \"email\": \"priya.sharma@yahoo.com\"\r\n      }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/5/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"5",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:28:50 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "59"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"detail\": \"Attendee Priya Sharma Registrated Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Arjun Patel",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Arjun Patel\",\r\n        \"email\": \"arjun.patel@outlook.com\"\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/7/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"7",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Arjun Patel",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"Arjun Patel\",\r\n        \"email\": \"arjun.patel@outlook.com\"\r\n      }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/5/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"5",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:29:08 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"detail\": \"Attendee Arjun Patel Registrated Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Sneha Reddy",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Sneha Reddy\",\r\n        \"email\": \"sneha.reddy@gmail.com\"\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/7/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"7",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Sneha Reddy",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"Sneha Reddy\",\r\n        \"email\": \"sneha.reddy@gmail.com\"\r\n      }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/5/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"5",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:29:25 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"detail\": \"Attendee Sneha Reddy Registrated Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Vikram Singh",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Vikram Singh\",\r\n        \"email\": \"vikram.singh@hotmail.com\"\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/7/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"7",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Vikram Singh",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"Vikram Singh\",\r\n        \"email\": \"vikram.singh@hotmail.com\"\r\n      }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/5/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"5",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:29:51 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "59"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"detail\": \"Attendee Vikram Singh Registrated Successfully\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "List attendees for Event",
+			"item": [
+				{
+					"name": "List attendees",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/7/attendees/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"7",
+								"attendees",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "List attendees",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/5/attendees/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"5",
+										"attendees",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:30:26 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "336"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 5,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"name\": \"Arjun Patel\",\n            \"email\": \"arjun.patel@outlook.com\"\n        },\n        {\n            \"name\": \"Priya Sharma\",\n            \"email\": \"priya.sharma@yahoo.com\"\n        },\n        {\n            \"name\": \"Rajesh Kumar\",\n            \"email\": \"rajesh.kumar@gmail.com\"\n        },\n        {\n            \"name\": \"Sneha Reddy\",\n            \"email\": \"sneha.reddy@gmail.com\"\n        },\n        {\n            \"name\": \"Vikram Singh\",\n            \"email\": \"vikram.singh@hotmail.com\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Check slots",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Check slots",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:30:57 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "962"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"name\": \"Tech Conference 2025\",\n        \"location\": \"Chennai Convention Center\",\n        \"start_time\": \"2025-07-15T09:00:00+05:30\",\n        \"end_time\": \"2025-07-15T18:00:00+05:30\",\n        \"max_capacity\": 100,\n        \"available_slots\": 95\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Summer Music Festival\",\n        \"location\": \"Marina Beach Amphitheater\",\n        \"start_time\": \"2025-08-20T17:00:00+05:30\",\n        \"end_time\": \"2025-08-20T23:00:00+05:30\",\n        \"max_capacity\": 150,\n        \"available_slots\": 150\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Startup Pitch Night\",\n        \"location\": \"T-Hub, Hyderabad\",\n        \"start_time\": \"2025-09-10T18:30:00+05:30\",\n        \"end_time\": \"2025-09-10T21:30:00+05:30\",\n        \"max_capacity\": 200,\n        \"available_slots\": 200\n    },\n    {\n        \"id\": 8,\n        \"name\": \"AI & ML Workshop\",\n        \"location\": \"IIT Madras\",\n        \"start_time\": \"2025-10-05T10:00:00+05:30\",\n        \"end_time\": \"2025-10-05T16:00:00+05:30\",\n        \"max_capacity\": 10,\n        \"available_slots\": 10\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Food & Culture Festival\",\n        \"location\": \"Phoenix Mall, Bangalore\",\n        \"start_time\": \"2025-11-12T11:00:00+05:30\",\n        \"end_time\": \"2025-11-12T22:00:00+05:30\",\n        \"max_capacity\": 5,\n        \"available_slots\": 5\n    }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Summer Music Festival reg",
+			"item": [
+				{
+					"name": "Deepika Iyer",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Deepika Iyer\",\r\n        \"email\": \"deepika.iyer@gmail.com\"\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/8/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"8",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Deepika Iyer",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"Deepika Iyer\",\r\n        \"email\": \"deepika.iyer@gmail.com\"\r\n      }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/6/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"6",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:32:28 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "59"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"detail\": \"Attendee Deepika Iyer Registrated Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Rohit Agarwal",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Rohit Agarwal\",\r\n        \"email\": \"rohit.agarwal@outlook.com\"\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/8/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"8",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Rohit Agarwal",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"Rohit Agarwal\",\r\n        \"email\": \"rohit.agarwal@outlook.com\"\r\n      }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/6/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"6",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:33:14 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "60"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"detail\": \"Attendee Rohit Agarwal Registrated Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Meera Nair",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Meera Nair\",\r\n        \"email\": \"meera.nair@yahoo.com\"\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/8/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"8",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Meera Nair",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"Meera Nair\",\r\n        \"email\": \"meera.nair@yahoo.com\"\r\n      }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/6/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"6",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:33:34 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "57"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"detail\": \"Attendee Meera Nair Registrated Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Suresh Babu",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Suresh Babu\",\r\n        \"email\": \"suresh.babu@gmail.com\"\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/8/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"8",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Suresh Babu",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"Suresh Babu\",\r\n        \"email\": \"suresh.babu@gmail.com\"\r\n      }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/6/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"6",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:34:05 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "58"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"detail\": \"Attendee Suresh Babu Registrated Successfully\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Duplicate attendee",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Suresh Babu\",\r\n        \"email\": \"suresh.babu@gmail.com\"\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/8/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"8",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Duplicate attendee",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"Suresh Babu\",\r\n        \"email\": \"suresh.babu@gmail.com\"\r\n      }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/6/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"6",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:34:28 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"detail\": \"Email already registered for this event\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Duplicate attendee",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Rohit Agarwal\",\r\n        \"email\": \"rohit.agarwal@outlook.com\"\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/8/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"8",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Duplicate attendee",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"Rohit Agarwal\",\r\n        \"email\": \"rohit.agarwal@outlook.com\"\r\n      }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/6/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"6",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:34:43 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "52"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"detail\": \"Email already registered for this event\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Summer Music Festival attendees",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Rohit Agarwal\",\r\n        \"email\": \"rohit.agarwal@outlook.com\"\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/8/attendees/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"8",
+								"attendees",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Summer Music Festival attendees",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"Rohit Agarwal\",\r\n        \"email\": \"rohit.agarwal@outlook.com\"\r\n      }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/6/attendees/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"6",
+										"attendees",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:35:18 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "277"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 4,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"name\": \"Deepika Iyer\",\n            \"email\": \"deepika.iyer@gmail.com\"\n        },\n        {\n            \"name\": \"Meera Nair\",\n            \"email\": \"meera.nair@yahoo.com\"\n        },\n        {\n            \"name\": \"Rohit Agarwal\",\n            \"email\": \"rohit.agarwal@outlook.com\"\n        },\n        {\n            \"name\": \"Suresh Babu\",\n            \"email\": \"suresh.babu@gmail.com\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "max capacity reach",
+			"item": [
+				{
+					"name": "check event",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Rohit Agarwal\",\r\n        \"email\": \"rohit.agarwal@outlook.com\"\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "check event",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"Rohit Agarwal\",\r\n        \"email\": \"rohit.agarwal@outlook.com\"\r\n      }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:35:47 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "962"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"name\": \"Tech Conference 2025\",\n        \"location\": \"Chennai Convention Center\",\n        \"start_time\": \"2025-07-15T09:00:00+05:30\",\n        \"end_time\": \"2025-07-15T18:00:00+05:30\",\n        \"max_capacity\": 100,\n        \"available_slots\": 95\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Summer Music Festival\",\n        \"location\": \"Marina Beach Amphitheater\",\n        \"start_time\": \"2025-08-20T17:00:00+05:30\",\n        \"end_time\": \"2025-08-20T23:00:00+05:30\",\n        \"max_capacity\": 150,\n        \"available_slots\": 146\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Startup Pitch Night\",\n        \"location\": \"T-Hub, Hyderabad\",\n        \"start_time\": \"2025-09-10T18:30:00+05:30\",\n        \"end_time\": \"2025-09-10T21:30:00+05:30\",\n        \"max_capacity\": 200,\n        \"available_slots\": 200\n    },\n    {\n        \"id\": 8,\n        \"name\": \"AI & ML Workshop\",\n        \"location\": \"IIT Madras\",\n        \"start_time\": \"2025-10-05T10:00:00+05:30\",\n        \"end_time\": \"2025-10-05T16:00:00+05:30\",\n        \"max_capacity\": 10,\n        \"available_slots\": 10\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Food & Culture Festival\",\n        \"location\": \"Phoenix Mall, Bangalore\",\n        \"start_time\": \"2025-11-12T11:00:00+05:30\",\n        \"end_time\": \"2025-11-12T22:00:00+05:30\",\n        \"max_capacity\": 5,\n        \"available_slots\": 5\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "max capacity",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Rohit Agarwal\",\r\n        \"email\": \"rohit.agarwal@outlook.com\"\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/10/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"10",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "max capacity",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"Pooja Desai\",\r\n        \"email\": \"pooja.desai@gmail.com\"\r\n      }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/8/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"8",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:42:43 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"detail\": \"Event has reached maximum capacity\"\n}"
+						}
+					]
+				},
+				{
+					"name": "max reach",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\": \"Sachin Gupta\",\r\n        \"email\": \"sachin.gupta@hotmail.com\"\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/11/register/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"11",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "max reach",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"Sachin Gupta\",\r\n        \"email\": \"sachin.gupta@hotmail.com\"\r\n      }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/8/register/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"8",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:44:10 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "POST, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "47"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"detail\": \"Event has reached maximum capacity\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "pagination",
+			"item": [
+				{
+					"name": "pagination -rec count 10",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"name\": \"Sanjay Verma\",\r\n        \"email\": \"sanjay.verma@outlook.com\"\r\n      }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/7/attendees/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"7",
+								"attendees",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "pagination -rec count 10",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n        \"name\": \"Simran Kaur\",\r\n        \"email\": \"simran.kaur@yahoo.com\"\r\n      }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/7/attendees/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"7",
+										"attendees",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:49:15 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "694"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 23,\n    \"next\": \"http://127.0.0.1:8000/events/7/attendees/?page=2\",\n    \"previous\": null,\n    \"results\": [\n        {\n            \"name\": \"Abhishek Pandey\",\n            \"email\": \"abhishek.pandey@outlook.com\"\n        },\n        {\n            \"name\": \"Aditya Kulkarni\",\n            \"email\": \"aditya.kulkarni@gmail.com\"\n        },\n        {\n            \"name\": \"Ananya Gupta\",\n            \"email\": \"ananya.gupta@gmail.com\"\n        },\n        {\n            \"name\": \"Arjun Patel\",\n            \"email\": \"arjun.patel@outlook.com\"\n        },\n        {\n            \"name\": \"Deepika Iyer\",\n            \"email\": \"deepika.iyer@gmail.com\"\n        },\n        {\n            \"name\": \"Divya Sinha\",\n            \"email\": \"divya.sinha@outlook.com\"\n        },\n        {\n            \"name\": \"Gaurav Bhardwaj\",\n            \"email\": \"gaurav.bhardwaj@hotmail.com\"\n        },\n        {\n            \"name\": \"Harsh Agrawal\",\n            \"email\": \"harsh.agrawal@gmail.com\"\n        },\n        {\n            \"name\": \"Isha Goel\",\n            \"email\": \"isha.goel@gmail.com\"\n        },\n        {\n            \"name\": \"Karthik Krishnan\",\n            \"email\": \"karthik.krishnan@yahoo.com\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "page=2",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/7/attendees/?page=2",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"7",
+								"attendees",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "page=2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/7/attendees/?page=2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"7",
+										"attendees",
+										""
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:49:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "707"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 23,\n    \"next\": \"http://127.0.0.1:8000/events/7/attendees/?page=3\",\n    \"previous\": \"http://127.0.0.1:8000/events/7/attendees/\",\n    \"results\": [\n        {\n            \"name\": \"Manoj Tiwari\",\n            \"email\": \"manoj.tiwari@gmail.com\"\n        },\n        {\n            \"name\": \"Meera Nair\",\n            \"email\": \"meera.nair@yahoo.com\"\n        },\n        {\n            \"name\": \"Neha Jain\",\n            \"email\": \"neha.jain@gmail.com\"\n        },\n        {\n            \"name\": \"Rahul Mishra\",\n            \"email\": \"rahul.mishra@yahoo.com\"\n        },\n        {\n            \"name\": \"Ritika Saxena\",\n            \"email\": \"ritika.saxena@gmail.com\"\n        },\n        {\n            \"name\": \"Rohit Agarwal\",\n            \"email\": \"rohit.agarwal@outlook.com\"\n        },\n        {\n            \"name\": \"Sanjay Verma\",\n            \"email\": \"sanjay.verma@outlook.com\"\n        },\n        {\n            \"name\": \"Shreya Malhotra\",\n            \"email\": \"shreya.malhotra@yahoo.com\"\n        },\n        {\n            \"name\": \"Simran Kaur\",\n            \"email\": \"simran.kaur@yahoo.com\"\n        },\n        {\n            \"name\": \"Sneha Reddy\",\n            \"email\": \"sneha.reddy@gmail.com\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "page=3",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/7/attendees/?page=3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								"7",
+								"attendees",
+								""
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "page=3",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/7/attendees/?page=3",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										"7",
+										"attendees",
+										""
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:50:28 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "269"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 23,\n    \"next\": null,\n    \"previous\": \"http://127.0.0.1:8000/events/7/attendees/?page=2\",\n    \"results\": [\n        {\n            \"name\": \"Tanvi Shah\",\n            \"email\": \"tanvi.shah@yahoo.com\"\n        },\n        {\n            \"name\": \"Varun Chopra\",\n            \"email\": \"varun.chopra@outlook.com\"\n        },\n        {\n            \"name\": \"Vikram Singh\",\n            \"email\": \"vikram.singh@hotmail.com\"\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "timezone",
+			"item": [
+				{
+					"name": "India IST tz",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\": \"Summer Music Festival\",\r\n      \"location\": \"Marina Beach Amphitheater\",\r\n      \"start_time\": \"2025-08-20T17:00:00+05:30\",\r\n      \"end_time\": \"2025-08-20T23:00:00+05:30\",\r\n      \"max_capacity\": 3\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "India IST tz",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"name\": \"Summer Music Festival\",\r\n      \"location\": \"Marina Beach Amphitheater\",\r\n      \"start_time\": \"2025-08-20T17:00:00+05:30\",\r\n      \"end_time\": \"2025-08-20T23:00:00+05:30\",\r\n      \"max_capacity\": 3\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:51:30 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "961"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"name\": \"Tech Conference 2025\",\n        \"location\": \"Chennai Convention Center\",\n        \"start_time\": \"2025-07-15T09:00:00+05:30\",\n        \"end_time\": \"2025-07-15T18:00:00+05:30\",\n        \"max_capacity\": 100,\n        \"available_slots\": 95\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Summer Music Festival\",\n        \"location\": \"Marina Beach Amphitheater\",\n        \"start_time\": \"2025-08-20T17:00:00+05:30\",\n        \"end_time\": \"2025-08-20T23:00:00+05:30\",\n        \"max_capacity\": 150,\n        \"available_slots\": 146\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Startup Pitch Night\",\n        \"location\": \"T-Hub, Hyderabad\",\n        \"start_time\": \"2025-09-10T18:30:00+05:30\",\n        \"end_time\": \"2025-09-10T21:30:00+05:30\",\n        \"max_capacity\": 200,\n        \"available_slots\": 177\n    },\n    {\n        \"id\": 8,\n        \"name\": \"AI & ML Workshop\",\n        \"location\": \"IIT Madras\",\n        \"start_time\": \"2025-10-05T10:00:00+05:30\",\n        \"end_time\": \"2025-10-05T16:00:00+05:30\",\n        \"max_capacity\": 10,\n        \"available_slots\": 0\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Food & Culture Festival\",\n        \"location\": \"Phoenix Mall, Bangalore\",\n        \"start_time\": \"2025-11-12T11:00:00+05:30\",\n        \"end_time\": \"2025-11-12T22:00:00+05:30\",\n        \"max_capacity\": 5,\n        \"available_slots\": 5\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "timezone-America/New_York",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\": \"Summer Music Festival\",\r\n      \"location\": \"Marina Beach Amphitheater\",\r\n      \"start_time\": \"2025-08-20T17:00:00+05:30\",\r\n      \"end_time\": \"2025-08-20T23:00:00+05:30\",\r\n      \"max_capacity\": 3\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/?timezone=America/New_York",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								""
+							],
+							"query": [
+								{
+									"key": "timezone",
+									"value": "America/New_York"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "timezone-America/New_York",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"name\": \"Summer Music Festival\",\r\n      \"location\": \"Marina Beach Amphitheater\",\r\n      \"start_time\": \"2025-08-20T17:00:00+05:30\",\r\n      \"end_time\": \"2025-08-20T23:00:00+05:30\",\r\n      \"max_capacity\": 3\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/?timezone=America/New_York",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										""
+									],
+									"query": [
+										{
+											"key": "timezone",
+											"value": "America/New_York"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:52:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "961"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"name\": \"Tech Conference 2025\",\n        \"location\": \"Chennai Convention Center\",\n        \"start_time\": \"2025-07-14T23:30:00-04:00\",\n        \"end_time\": \"2025-07-15T08:30:00-04:00\",\n        \"max_capacity\": 100,\n        \"available_slots\": 95\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Summer Music Festival\",\n        \"location\": \"Marina Beach Amphitheater\",\n        \"start_time\": \"2025-08-20T07:30:00-04:00\",\n        \"end_time\": \"2025-08-20T13:30:00-04:00\",\n        \"max_capacity\": 150,\n        \"available_slots\": 146\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Startup Pitch Night\",\n        \"location\": \"T-Hub, Hyderabad\",\n        \"start_time\": \"2025-09-10T09:00:00-04:00\",\n        \"end_time\": \"2025-09-10T12:00:00-04:00\",\n        \"max_capacity\": 200,\n        \"available_slots\": 177\n    },\n    {\n        \"id\": 8,\n        \"name\": \"AI & ML Workshop\",\n        \"location\": \"IIT Madras\",\n        \"start_time\": \"2025-10-05T00:30:00-04:00\",\n        \"end_time\": \"2025-10-05T06:30:00-04:00\",\n        \"max_capacity\": 10,\n        \"available_slots\": 0\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Food & Culture Festival\",\n        \"location\": \"Phoenix Mall, Bangalore\",\n        \"start_time\": \"2025-11-12T00:30:00-05:00\",\n        \"end_time\": \"2025-11-12T11:30:00-05:00\",\n        \"max_capacity\": 5,\n        \"available_slots\": 5\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "timezone=Europe/London",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\": \"Summer Music Festival\",\r\n      \"location\": \"Marina Beach Amphitheater\",\r\n      \"start_time\": \"2025-08-20T17:00:00+05:30\",\r\n      \"end_time\": \"2025-08-20T23:00:00+05:30\",\r\n      \"max_capacity\": 3\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/?timezone=Europe/London",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								""
+							],
+							"query": [
+								{
+									"key": "timezone",
+									"value": "Europe/London"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "timezone=Europe/London",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"name\": \"Summer Music Festival\",\r\n      \"location\": \"Marina Beach Amphitheater\",\r\n      \"start_time\": \"2025-08-20T17:00:00+05:30\",\r\n      \"end_time\": \"2025-08-20T23:00:00+05:30\",\r\n      \"max_capacity\": 3\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/?timezone=Europe/London",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										""
+									],
+									"query": [
+										{
+											"key": "timezone",
+											"value": "Europe/London"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:53:46 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "961"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"name\": \"Tech Conference 2025\",\n        \"location\": \"Chennai Convention Center\",\n        \"start_time\": \"2025-07-15T04:30:00+01:00\",\n        \"end_time\": \"2025-07-15T13:30:00+01:00\",\n        \"max_capacity\": 100,\n        \"available_slots\": 95\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Summer Music Festival\",\n        \"location\": \"Marina Beach Amphitheater\",\n        \"start_time\": \"2025-08-20T12:30:00+01:00\",\n        \"end_time\": \"2025-08-20T18:30:00+01:00\",\n        \"max_capacity\": 150,\n        \"available_slots\": 146\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Startup Pitch Night\",\n        \"location\": \"T-Hub, Hyderabad\",\n        \"start_time\": \"2025-09-10T14:00:00+01:00\",\n        \"end_time\": \"2025-09-10T17:00:00+01:00\",\n        \"max_capacity\": 200,\n        \"available_slots\": 177\n    },\n    {\n        \"id\": 8,\n        \"name\": \"AI & ML Workshop\",\n        \"location\": \"IIT Madras\",\n        \"start_time\": \"2025-10-05T05:30:00+01:00\",\n        \"end_time\": \"2025-10-05T11:30:00+01:00\",\n        \"max_capacity\": 10,\n        \"available_slots\": 0\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Food & Culture Festival\",\n        \"location\": \"Phoenix Mall, Bangalore\",\n        \"start_time\": \"2025-11-12T05:30:00+00:00\",\n        \"end_time\": \"2025-11-12T16:30:00+00:00\",\n        \"max_capacity\": 5,\n        \"available_slots\": 5\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "timezone=Europe/Berlin",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n      \"name\": \"Summer Music Festival\",\r\n      \"location\": \"Marina Beach Amphitheater\",\r\n      \"start_time\": \"2025-08-20T17:00:00+05:30\",\r\n      \"end_time\": \"2025-08-20T23:00:00+05:30\",\r\n      \"max_capacity\": 3\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/events/?timezone=Europe/Berlin",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"events",
+								""
+							],
+							"query": [
+								{
+									"key": "timezone",
+									"value": "Europe/Berlin"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "timezone=Europe/Berlin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n      \"name\": \"Summer Music Festival\",\r\n      \"location\": \"Marina Beach Amphitheater\",\r\n      \"start_time\": \"2025-08-20T17:00:00+05:30\",\r\n      \"end_time\": \"2025-08-20T23:00:00+05:30\",\r\n      \"max_capacity\": 3\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/events/?timezone=Europe/Berlin",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"events",
+										""
+									],
+									"query": [
+										{
+											"key": "timezone",
+											"value": "Europe/Berlin"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Wed, 18 Jun 2025 13:54:31 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.10.11"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Cookie"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "961"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 5,\n        \"name\": \"Tech Conference 2025\",\n        \"location\": \"Chennai Convention Center\",\n        \"start_time\": \"2025-07-15T05:30:00+02:00\",\n        \"end_time\": \"2025-07-15T14:30:00+02:00\",\n        \"max_capacity\": 100,\n        \"available_slots\": 95\n    },\n    {\n        \"id\": 6,\n        \"name\": \"Summer Music Festival\",\n        \"location\": \"Marina Beach Amphitheater\",\n        \"start_time\": \"2025-08-20T13:30:00+02:00\",\n        \"end_time\": \"2025-08-20T19:30:00+02:00\",\n        \"max_capacity\": 150,\n        \"available_slots\": 146\n    },\n    {\n        \"id\": 7,\n        \"name\": \"Startup Pitch Night\",\n        \"location\": \"T-Hub, Hyderabad\",\n        \"start_time\": \"2025-09-10T15:00:00+02:00\",\n        \"end_time\": \"2025-09-10T18:00:00+02:00\",\n        \"max_capacity\": 200,\n        \"available_slots\": 177\n    },\n    {\n        \"id\": 8,\n        \"name\": \"AI & ML Workshop\",\n        \"location\": \"IIT Madras\",\n        \"start_time\": \"2025-10-05T06:30:00+02:00\",\n        \"end_time\": \"2025-10-05T12:30:00+02:00\",\n        \"max_capacity\": 10,\n        \"available_slots\": 0\n    },\n    {\n        \"id\": 9,\n        \"name\": \"Food & Culture Festival\",\n        \"location\": \"Phoenix Mall, Bangalore\",\n        \"start_time\": \"2025-11-12T06:30:00+01:00\",\n        \"end_time\": \"2025-11-12T17:30:00+01:00\",\n        \"max_capacity\": 5,\n        \"available_slots\": 5\n    }\n]"
+						}
+					]
+				}
+			]
+		}
+	]
+}
