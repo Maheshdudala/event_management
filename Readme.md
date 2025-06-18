@@ -95,7 +95,7 @@ python manage.py runserver
 }
 ```
 
-### List Events (GET `/api/events/`)
+### List Events (GET `/events/`)
 
 Optionally support timezone conversion:
 
@@ -103,7 +103,7 @@ Optionally support timezone conversion:
 /api/events/?timezone=Europe/London
 ```
 
-### Register Attendee (POST `/api/events/{event_id}/register/`)
+### Register Attendee (POST `/events/{event_id}/register/`)
 
 ```json
 {
@@ -112,7 +112,7 @@ Optionally support timezone conversion:
 }
 ```
 
-### List Attendees (GET `/api/events/{event_id}/attendees/`)
+### List Attendees (GET `/events/{event_id}/attendees/`)
 
 Paginated and sorted alphabetically.
 
